@@ -1,0 +1,74 @@
+/* reset styles */
+@import url(null.css);
+/* link Raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap'); 
+/* link Prosto One font */
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --gray-1: #F2F5F7;
+    --gray-2: #DEDBDB;
+    --gray-3: #8A8A8A;
+    --gray-4: #3B3B3B;
+    --gray-5: #212526;
+
+    --orange: #F05A00;
+    --red: #FC573B;
+}
+* {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+body {
+    background: var(--gray-1);
+}
+.container {
+    max-width: 1300px;  
+    margin: 0 auto;
+}
+
+/* header start */
+.header {
+    background: var(--gray-5);
+    color: var(--white);
+}
+.header-content {
+    display: grid;
+    height: 96px;
+    grid-template-columns: 1fr 387px 155px;
+}
+.header .info-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.buttons-part {
+    display: flex;
+}
+.phone__text {
+    font-weight: 600;
+}
+.phone__link {
+    color: var(--red);
+    text-decoration: underline;
+    font-size: 14px;
+}
+.buttons-part__but {
+    background: var(--gray-4);
+    display: inline-block;
+    height: 100%;
+    width: 96px;
+}
+.sum-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.sum-part__sum {
+    font-weight: 700;
+}
